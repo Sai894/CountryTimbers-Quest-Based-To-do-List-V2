@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest Hero - Your Adventure Awaits</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <div class="header">
+            <h1 class="title">
+                <span class="sparkle">✨</span>
+                Quest Hero: Your Adventure Awaits
+                <span class="sparkle">✨</span>
+            </h1>
+            <p class="subtitle">Transform your tasks into epic quests and level up in life!</p>
+        </div>
+
+        <!-- User Summary Frame -->
+        <div id="userSummary" class="user-summary"></div>
+
+        <!-- Game World -->
+        <div class="game-world-container">
+            <div class="game-world-header">
+                <h2>🗺️ The Quest Realm</h2>
+                <p>Move your hero and speak with the Quest Giver for wisdom and motivation!</p>
+            </div>
+            <div id="gameWorld" class="game-world"></div>
+        </div>
+
+        <!-- Main Content Grid -->
+        <div class="main-grid">
+            <!-- Active Quests -->
+            <div class="quests-column">
+                <div id="activeQuests" class="active-quests"></div>
+            </div>
+
+            <!-- Progress Overview -->
+            <div class="progress-column">
+                <div id="progressOverview" class="progress-overview"></div>
+            </div>
+        </div>
+
+        <!-- Footer Message -->
+        <div id="footerMessage" class="footer-message hidden">
+            <p>✨ The Quest Giver's wisdom guides your path. Stay focused, brave hero! ✨</p>
+        </div>
+    </div>
+
+    <!-- Quest Giver Dialog Modal -->
+    <div id="questGiverDialog" class="dialog-overlay hidden">
+        <div class="dialog-content">
+            <div class="dialog-header">
+                <h3>
+                    <span class="sparkle">✨</span>
+                    The Wise Quest Giver Speaks
+                </h3>
+                <p class="dialog-description">Listen to the wisdom of the quest giver.</p>
+            </div>
+            <div class="dialog-body">
+                <div class="quote-box">
+                    <p id="questGiverQuote" class="quote-text"></p>
+                </div>
+                <div class="dialog-actions">
+                    <button id="closeDialog" class="btn-primary">Thank you, wise one</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
